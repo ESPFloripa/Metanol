@@ -149,338 +149,349 @@
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto p-4 sm:p-6 lg:p-8">
+    <!-- Seção Iniciar -->
+    <div id="start-section" class="text-center py-10 px-4 bg-gray-100">
+        <p class="mb-4 font-semibold text-gray-800 text-lg">Antes de iniciar o curso leia as instruções e faça a sua inscrição acima!</p>
+        <button id="start-btn" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-300">
+            Iniciar
+        </button>
+    </div>
 
-        <!-- Seção de Alerta -->
-        <section id="alerta" class="section-card">
-            <h2 class="text-2xl font-bold text-red-700 mb-4">O que é o Metanol e por que é perigoso?</h2>
-            <p class="mb-4">O metanol é um álcool tóxico usado em produtos industriais como solventes e combustíveis. **O seu uso em bebidas alcoólicas é ilegal e extremamente perigoso.**</p>
-            <div class="bg-red-50 border-l-4 border-red-500 text-red-700 p-4 rounded-md" role="alert">
-                <p class="font-bold">Risco Elevado!</p>
-                <p>A intoxicação ocorre pela transformação do metanol em ácido fórmico no corpo, causando acidose metabólica grave, danos neurológicos e, principalmente, toxicidade nos olhos, podendo levar à **cegueira irreversível e à morte**.</p>
-            </div>
-            <p class="mt-4 text-sm text-gray-600">Um aumento de casos associados ao consumo de bebidas adulteradas colocou o sistema de saúde em alerta. Esta situação é um Evento de Saúde Pública (ESP) de notificação imediata.</p>
-        </section>
+    <!-- Wrapper do Conteúdo Principal (Oculto por Padrão) -->
+    <div id="main-content-wrapper" class="hidden">
+        <!-- Main Content -->
+        <main class="container mx-auto p-4 sm:p-6 lg:p-8">
 
-        <!-- Seção de Sintomas -->
-        <section id="sintomas" class="section-card">
-            <h2 class="text-2xl font-bold text-yellow-700 mb-4">Fases e Sintomas da Intoxicação</h2>
-            <p class="mb-6">Os sintomas podem demorar a aparecer, especialmente se a pessoa também consumiu etanol (álcool comum). Fique atento à progressão:</p>
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Card 1: Iniciais -->
-                <div class="flip-card-container">
-                    <div class="flip-card">
-                        <div class="flip-card-front bg-yellow-50 p-4 rounded-lg border border-yellow-200">
-                            <h3 class="font-bold text-lg text-yellow-800 mb-2">Fase 1: Iniciais (até 6 horas)</h3>
-                            <ul class="list-disc list-inside space-y-1">
-                                <li>Dores de cabeça, tontura</li>
-                                <li>Náuseas e vômitos</li>
-                                <li>Dor abdominal forte</li>
-                                <li>Sensação de "embriaguez atípica"</li>
-                            </ul>
-                        </div>
-                        <div class="flip-card-back bg-yellow-600">
-                            <h4 class="font-bold mb-2">Atenção!</h4>
-                            <p class="text-sm">Sintomas iniciais podem ser confundidos com embriaguez comum, mas a persistência e a dor abdominal são os primeiros sinais de alerta.</p>
-                        </div>
-                    </div>
+            <!-- Seção de Alerta -->
+            <section id="alerta" class="section-card">
+                <h2 class="text-2xl font-bold text-red-700 mb-4">O que é o Metanol e por que é perigoso?</h2>
+                <p class="mb-4">O metanol é um álcool tóxico usado em produtos industriais como solventes e combustíveis. **O seu uso em bebidas alcoólicas é ilegal e extremamente perigoso.**</p>
+                <div class="bg-red-50 border-l-4 border-red-500 text-red-700 p-4 rounded-md" role="alert">
+                    <p class="font-bold">Risco Elevado!</p>
+                    <p>A intoxicação ocorre pela transformação do metanol em ácido fórmico no corpo, causando acidose metabólica grave, danos neurológicos e, principalmente, toxicidade nos olhos, podendo levar à **cegueira irreversível e à morte**.</p>
                 </div>
-                <!-- Card 2: Latência -->
-                <div class="flip-card-container">
-                    <div class="flip-card">
-                        <div class="flip-card-front bg-orange-50 p-4 rounded-lg border border-orange-200">
-                            <h3 class="font-bold text-lg text-orange-800 mb-2">Fase 2: Latência (12 a 24 horas)</h3>
-                            <p class="mb-2">Neste período, os sintomas pioram. A ingestão de etanol pode mascarar ou atrasar esta fase.</p>
-                            <p class="font-semibold text-red-600">Sinal de Alerta Máximo:</p>
-                            <ul class="list-disc list-inside space-y-1 mt-1">
-                                <li>Visão turva ou borrada</li>
-                                <li>Pontos cegos (escotomas)</li>
-                                <li>Sensibilidade à luz (fotofobia)</li>
-                            </ul>
-                        </div>
-                         <div class="flip-card-back bg-orange-600">
-                            <h4 class="font-bold mb-2">Fase Crítica!</h4>
-                            <p class="text-sm">Sintomas visuais indicam dano neurológico em andamento. O tempo para buscar ajuda médica é crucial.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3: Graves -->
-                <div class="flip-card-container">
-                     <div class="flip-card">
-                        <div class="flip-card-front bg-red-50 p-4 rounded-lg border border-red-200">
-                            <h3 class="font-bold text-lg text-red-800 mb-2">Fase 3: Graves</h3>
-                            <ul class="list-disc list-inside space-y-1">
-                                <li>Convulsões e coma</li>
-                                <li>Acidose metabólica grave</li>
-                                <li>Cegueira irreversível</li>
-                                <li>Insuficiência renal e pancreatite</li>
-                                <li>Falência de múltiplos órgãos</li>
-                            </ul>
-                        </div>
-                        <div class="flip-card-back bg-red-600">
-                            <h4 class="font-bold mb-2">Risco Iminente!</h4>
-                            <p class="text-sm">Nesta fase, os danos podem ser irreversíveis. O tratamento imediato é a única chance de mitigar as sequelas e salvar a vida.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                <p class="mt-4 text-sm text-gray-600">Um aumento de casos associados ao consumo de bebidas adulteradas colocou o sistema de saúde em alerta. Esta situação é um Evento de Saúde Pública (ESP) de notificação imediata.</p>
+            </section>
 
-        <!-- Seção de Conduta -->
-        <section id="conduta" class="section-card">
-            <h2 class="text-2xl font-bold text-blue-700 mb-4">O que fazer?</h2>
-            <div class="border-b border-gray-200 mb-4">
-                <nav class="-mb-px flex space-x-6" aria-label="Tabs">
-                    <button id="tab-btn-publico" class="tab-button active whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">Para o Público</button>
-                    <button id="tab-btn-suspeita" class="tab-button whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">Em Caso de Suspeita</button>
-                </nav>
-            </div>
-
-            <!-- Conteúdo da Tab: Para o Público -->
-            <div id="tab-content-publico">
-                <h3 class="text-lg font-semibold mb-2">Como se proteger:</h3>
-                <ul class="list-disc list-inside space-y-2 mb-4">
-                    <li>Adquira bebidas apenas de estabelecimentos confiáveis e legalizados.</li>
-                    <li>Desconfie de preços muito abaixo da média de mercado.</li>
-                    <li>Verifique a integridade da embalagem: o lacre deve estar intacto e o rótulo bem fixado, sem erros de português ou impressão de baixa qualidade.</li>
-                    <li>Inspecione a bebida contra a luz para verificar se o líquido está límpido, sem partículas ou impurezas.</li>
-                </ul>
-                <div class="bg-blue-50 border-l-4 border-blue-500 text-blue-700 p-4 rounded-md">
-                    <p><span class="font-bold">Suspeita de produto adulterado?</span> Não consuma! Guarde a embalagem e entre em contato com a vigilância sanitária do seu município.</p>
-                </div>
-            </div>
-
-            <!-- Conteúdo da Tab: Em caso de Suspeita -->
-            <div id="tab-content-suspeita" class="hidden">
-                 <h3 class="text-lg font-semibold mb-2 text-red-600">Definição de Caso Suspeito:</h3>
-                 <div class="bg-yellow-50 border border-yellow-300 p-4 rounded-lg mb-4">
-                    <p>Qualquer pessoa com histórico de ingestão de bebidas alcoólicas que apresente, <span class="font-bold">após 12 horas</span>, a persistência ou piora de:</p>
-                    <ul class="list-disc list-inside mt-2">
-                        <li>Sintomas de embriaguez com forte desconforto gástrico; <span class="font-bold">OU</span></li>
-                        <li>Qualquer manifestação visual (visão turva, borrada, escotomas).</li>
-                    </ul>
-                 </div>
-                 <h3 class="text-lg font-semibold mb-2">Ações Imediatas:</h3>
-                 <ol class="list-decimal list-inside space-y-2">
-                    <li><span class="font-bold">Procure atendimento médico de urgência IMEDIATAMENTE.</span> Não espere os sintomas piorarem.</li>
-                    <li>Informe ao profissional de saúde sobre a bebida ingerida (nome, local de compra, etc.).</li>
-                    <li>Se possível, guarde uma amostra da bebida suspeita para análise.</li>
-                    <li>Informe quem mais pode ter consumido a mesma bebida.</li>
-                 </ol>
-            </div>
-        </section>
-
-        <!-- Seção para Profissionais de Saúde -->
-        <section id="profissionais" class="section-card">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">Guia para Profissionais de Saúde</h2>
-            
-            <div class="bg-gray-100 p-4 rounded-lg">
-                <h3 class="text-xl font-bold text-red-700 mb-3">Manejo Clínico e Notificação</h3>
-
-                <div class="grid md:grid-cols-2 gap-6">
-                    <!-- Coluna 1: Conduta Inicial -->
-                    <div>
-                        <h4 class="font-semibold text-lg mb-2">Conduta Inicial e Terapêutica</h4>
-                        <ul class="list-disc list-inside space-y-2 text-sm">
-                            <li>Garantir vias aéreas, ventilação e suporte hemodinâmico.</li>
-                            <li><span class="font-bold text-red-600">NÃO FAZER:</span> Lavagem gástrica e carvão ativado são ineficazes.</li>
-                            <li><span class="font-bold">Exames Urgentes:</span> Gasometria arterial, eletrólitos (c/ cálculo de ânion gap), ureia, creatinina, glicemia e osmolaridade sérica (c/ cálculo de gap osmolar).</li>
-                            <li><span class="font-bold">Antídoto:</span> Iniciar Etanol IV ou oral para bloquear a enzima ADH. Contatar CIATox para orientação de dose.</li>
-                            <li><span class="font-bold">Correção da Acidose:</span> Bicarbonato de Sódio IV, guiado por gasometrias seriadas (a cada 2-4h).</li>
-                            <li><span class="font-bold">Adjuvante:</span> Ácido folínico.</li>
-                            <li><span class="font-bold">Hemodiálise:</span> Indicada em casos graves (coma, convulsões, déficit visual, acidose refratária, ou níveis séricos de metanol > 500 mg/L).</li>
-                        </ul>
-                    </div>
-
-                    <!-- Coluna 2: Fluxo de Notificação -->
-                    <div>
-                        <h4 class="font-semibold text-lg mb-2">Fluxo de Comunicação e Notificação</h4>
-                        <ol class="list-decimal list-inside space-y-3 text-sm">
-                            <li>
-                                <span class="font-bold">CONTATO IMEDIATO:</span> Ligar para o <span class="font-semibold">CIATox-SC</span>. Eles fornecerão orientação sobre o manejo e a coleta de amostras.
-                            </li>
-                            <li>
-                                <span class="font-bold">NOTIFICAR NO SINAN:</span> Preencher a Ficha de Investigação de Intoxicação Exógena para TODOS os casos suspeitos.
-                                <ul class="list-disc list-inside ml-4 mt-1 bg-gray-200 p-2 rounded">
-                                    <li><span class="font-semibold">Campo 49:</span> Marcar "14 - Outro: Metanol".</li>
-                                    <li><span class="font-semibold">Campo 55:</span> Marcar "09 - Ingestão de alimento ou bebida".</li>
-                                    <li><span class="font-semibold">Campo 66 (se confirmado):</span> CID T51.1.</li>
+            <!-- Seção de Sintomas -->
+            <section id="sintomas" class="section-card">
+                <h2 class="text-2xl font-bold text-yellow-700 mb-4">Fases e Sintomas da Intoxicação</h2>
+                <p class="mb-6">Os sintomas podem demorar a aparecer, especialmente se a pessoa também consumiu etanol (álcool comum). Fique atento à progressão:</p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Card 1: Iniciais -->
+                    <div class="flip-card-container">
+                        <div class="flip-card">
+                            <div class="flip-card-front bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                                <h3 class="font-bold text-lg text-yellow-800 mb-2">Fase 1: Iniciais (até 6 horas)</h3>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Dores de cabeça, tontura</li>
+                                    <li>Náuseas e vômitos</li>
+                                    <li>Dor abdominal forte</li>
+                                    <li>Sensação de "embriaguez atípica"</li>
                                 </ul>
-                            </li>
-                             <li>
-                                <span class="font-bold">INFORMAR A VIGILÂNCIA:</span> Comunicar à Vigilância Epidemiológica (VE) Municipal o nome do produto, local de aquisição e dados de outros expostos.
-                            </li>
-                        </ol>
+                            </div>
+                            <div class="flip-card-back bg-yellow-600">
+                                <h4 class="font-bold mb-2">Atenção!</h4>
+                                <p class="text-sm">Sintomas iniciais podem ser confundidos com embriaguez comum, mas a persistência e a dor abdominal são os primeiros sinais de alerta.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2: Latência -->
+                    <div class="flip-card-container">
+                        <div class="flip-card">
+                            <div class="flip-card-front bg-orange-50 p-4 rounded-lg border border-orange-200">
+                                <h3 class="font-bold text-lg text-orange-800 mb-2">Fase 2: Latência (12 a 24 horas)</h3>
+                                <p class="mb-2">Neste período, os sintomas pioram. A ingestão de etanol pode mascarar ou atrasar esta fase.</p>
+                                <p class="font-semibold text-red-600">Sinal de Alerta Máximo:</p>
+                                <ul class="list-disc list-inside space-y-1 mt-1">
+                                    <li>Visão turva ou borrada</li>
+                                    <li>Pontos cegos (escotomas)</li>
+                                    <li>Sensibilidade à luz (fotofobia)</li>
+                                </ul>
+                            </div>
+                             <div class="flip-card-back bg-orange-600">
+                                <h4 class="font-bold mb-2">Fase Crítica!</h4>
+                                <p class="text-sm">Sintomas visuais indicam dano neurológico em andamento. O tempo para buscar ajuda médica é crucial.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3: Graves -->
+                    <div class="flip-card-container">
+                         <div class="flip-card">
+                            <div class="flip-card-front bg-red-50 p-4 rounded-lg border border-red-200">
+                                <h3 class="font-bold text-lg text-red-800 mb-2">Fase 3: Graves</h3>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Convulsões e coma</li>
+                                    <li>Acidose metabólica grave</li>
+                                    <li>Cegueira irreversível</li>
+                                    <li>Insuficiência renal e pancreatite</li>
+                                    <li>Falência de múltiplos órgãos</li>
+                                </ul>
+                            </div>
+                            <div class="flip-card-back bg-red-600">
+                                <h4 class="font-bold mb-2">Risco Iminente!</h4>
+                                <p class="text-sm">Nesta fase, os danos podem ser irreversíveis. O tratamento imediato é a única chance de mitigar as sequelas e salvar a vida.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de Conduta -->
+            <section id="conduta" class="section-card">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">O que fazer?</h2>
+                <div class="border-b border-gray-200 mb-4">
+                    <nav class="-mb-px flex space-x-6" aria-label="Tabs">
+                        <button id="tab-btn-publico" class="tab-button active whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">Para o Público</button>
+                        <button id="tab-btn-suspeita" class="tab-button whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">Em Caso de Suspeita</button>
+                    </nav>
+                </div>
+
+                <!-- Conteúdo da Tab: Para o Público -->
+                <div id="tab-content-publico">
+                    <h3 class="text-lg font-semibold mb-2">Como se proteger:</h3>
+                    <ul class="list-disc list-inside space-y-2 mb-4">
+                        <li>Adquira bebidas apenas de estabelecimentos confiáveis e legalizados.</li>
+                        <li>Desconfie de preços muito abaixo da média de mercado.</li>
+                        <li>Verifique a integridade da embalagem: o lacre deve estar intacto e o rótulo bem fixado, sem erros de português ou impressão de baixa qualidade.</li>
+                        <li>Inspecione a bebida contra a luz para verificar se o líquido está límpido, sem partículas ou impurezas.</li>
+                    </ul>
+                    <div class="bg-blue-50 border-l-4 border-blue-500 text-blue-700 p-4 rounded-md">
+                        <p><span class="font-bold">Suspeita de produto adulterado?</span> Não consuma! Guarde a embalagem e entre em contato com a vigilância sanitária do seu município.</p>
                     </div>
                 </div>
 
-                 <h4 class="font-semibold text-lg mt-6 mb-2">Critérios de Internação (Decisão com CIATox)</h4>
-                 <div class="flex flex-col md:flex-row gap-4">
-                    <div class="flex-1 bg-white p-3 rounded-md border">
-                        <h5 class="font-bold text-center">Internação em Enfermaria</h5>
-                        <ul class="text-xs list-disc list-inside mt-2 space-y-1">
-                            <li>Sintomas clínicos compatíveis.</li>
-                            <li>Alterações laboratoriais iniciais (pH<7,35; Bicarbonato<22).</li>
-                            <li>Exposição crível sem possibilidade de observação domiciliar.</li>
+                <!-- Conteúdo da Tab: Em caso de Suspeita -->
+                <div id="tab-content-suspeita" class="hidden">
+                     <h3 class="text-lg font-semibold mb-2 text-red-600">Definição de Caso Suspeito:</h3>
+                     <div class="bg-yellow-50 border border-yellow-300 p-4 rounded-lg mb-4">
+                        <p>Qualquer pessoa com histórico de ingestão de bebidas alcoólicas que apresente, <span class="font-bold">após 12 horas</span>, a persistência ou piora de:</p>
+                        <ul class="list-disc list-inside mt-2">
+                            <li>Sintomas de embriaguez com forte desconforto gástrico; <span class="font-bold">OU</span></li>
+                            <li>Qualquer manifestação visual (visão turva, borrada, escotomas).</li>
                         </ul>
+                     </div>
+                     <h3 class="text-lg font-semibold mb-2">Ações Imediatas:</h3>
+                     <ol class="list-decimal list-inside space-y-2">
+                        <li><span class="font-bold">Procure atendimento médico de urgência IMEDIATAMENTE.</span> Não espere os sintomas piorarem.</li>
+                        <li>Informe ao profissional de saúde sobre a bebida ingerida (nome, local de compra, etc.).</li>
+                        <li>Se possível, guarde uma amostra da bebida suspeita para análise.</li>
+                        <li>Informe quem mais pode ter consumido a mesma bebida.</li>
+                     </ol>
+                </div>
+            </section>
+
+            <!-- Seção para Profissionais de Saúde -->
+            <section id="profissionais" class="section-card">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Guia para Profissionais de Saúde</h2>
+                
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h3 class="text-xl font-bold text-red-700 mb-3">Manejo Clínico e Notificação</h3>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Coluna 1: Conduta Inicial -->
+                        <div>
+                            <h4 class="font-semibold text-lg mb-2">Conduta Inicial e Terapêutica</h4>
+                            <ul class="list-disc list-inside space-y-2 text-sm">
+                                <li>Garantir vias aéreas, ventilação e suporte hemodinâmico.</li>
+                                <li><span class="font-bold text-red-600">NÃO FAZER:</span> Lavagem gástrica e carvão ativado são ineficazes.</li>
+                                <li><span class="font-bold">Exames Urgentes:</span> Gasometria arterial, eletrólitos (c/ cálculo de ânion gap), ureia, creatinina, glicemia e osmolaridade sérica (c/ cálculo de gap osmolar).</li>
+                                <li><span class="font-bold">Antídoto:</span> Iniciar Etanol IV ou oral para bloquear a enzima ADH. Contatar CIATox para orientação de dose.</li>
+                                <li><span class="font-bold">Correção da Acidose:</span> Bicarbonato de Sódio IV, guiado por gasometrias seriadas (a cada 2-4h).</li>
+                                <li><span class="font-bold">Adjuvante:</span> Ácido folínico.</li>
+                                <li><span class="font-bold">Hemodiálise:</span> Indicada em casos graves (coma, convulsões, déficit visual, acidose refratária, ou níveis séricos de metanol > 500 mg/L).</li>
+                            </ul>
+                        </div>
+
+                        <!-- Coluna 2: Fluxo de Notificação -->
+                        <div>
+                            <h4 class="font-semibold text-lg mb-2">Fluxo de Comunicação e Notificação</h4>
+                            <ol class="list-decimal list-inside space-y-3 text-sm">
+                                <li>
+                                    <span class="font-bold">CONTATO IMEDIATO:</span> Ligar para o <span class="font-semibold">CIATox-SC</span>. Eles fornecerão orientação sobre o manejo e a coleta de amostras.
+                                </li>
+                                <li>
+                                    <span class="font-bold">NOTIFICAR NO SINAN:</span> Preencher a Ficha de Investigação de Intoxicação Exógena para TODOS os casos suspeitos.
+                                    <ul class="list-disc list-inside ml-4 mt-1 bg-gray-200 p-2 rounded">
+                                        <li><span class="font-semibold">Campo 49:</span> Marcar "14 - Outro: Metanol".</li>
+                                        <li><span class="font-semibold">Campo 55:</span> Marcar "09 - Ingestão de alimento ou bebida".</li>
+                                        <li><span class="font-semibold">Campo 66 (se confirmado):</span> CID T51.1.</li>
+                                    </ul>
+                                </li>
+                                 <li>
+                                    <span class="font-bold">INFORMAR A VIGILÂNCIA:</span> Comunicar à Vigilância Epidemiológica (VE) Municipal o nome do produto, local de aquisição e dados de outros expostos.
+                                </li>
+                            </ol>
+                        </div>
                     </div>
-                     <div class="flex-1 bg-white p-3 rounded-md border border-red-400">
-                        <h5 class="font-bold text-center text-red-600">Internação em UTI</h5>
-                        <ul class="text-xs list-disc list-inside mt-2 space-y-1">
-                            <li>Rebaixamento de consciência (Glasgow <13), convulsões ou coma.</li>
-                            <li>Déficit visual agudo ou progressivo.</li>
-                            <li>Acidose metabólica grave (pH ≤7,25).</li>
-                            <li>Instabilidade hemodinâmica.</li>
-                            <li>Indicação de hemodiálise.</li>
-                        </ul>
+
+                     <h4 class="font-semibold text-lg mt-6 mb-2">Critérios de Internação (Decisão com CIATox)</h4>
+                     <div class="flex flex-col md:flex-row gap-4">
+                        <div class="flex-1 bg-white p-3 rounded-md border">
+                            <h5 class="font-bold text-center">Internação em Enfermaria</h5>
+                            <ul class="text-xs list-disc list-inside mt-2 space-y-1">
+                                <li>Sintomas clínicos compatíveis.</li>
+                                <li>Alterações laboratoriais iniciais (pH<7,35; Bicarbonato<22).</li>
+                                <li>Exposição crível sem possibilidade de observação domiciliar.</li>
+                            </ul>
+                        </div>
+                         <div class="flex-1 bg-white p-3 rounded-md border border-red-400">
+                            <h5 class="font-bold text-center text-red-600">Internação em UTI</h5>
+                            <ul class="text-xs list-disc list-inside mt-2 space-y-1">
+                                <li>Rebaixamento de consciência (Glasgow <13), convulsões ou coma.</li>
+                                <li>Déficit visual agudo ou progressivo.</li>
+                                <li>Acidose metabólica grave (pH ≤7,25).</li>
+                                <li>Instabilidade hemodinâmica.</li>
+                                <li>Indicação de hemodiálise.</li>
+                            </ul>
+                        </div>
+                     </div>
+                </div>
+
+            </section>
+            
+            <!-- Seção de Contatos -->
+            <section id="contatos" class="section-card bg-blue-900 text-white">
+                <h2 class="text-2xl font-bold mb-4">Contatos de Emergência e Notificação</h2>
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div class="bg-white text-gray-800 p-4 rounded-lg text-center shadow-md">
+                        <h3 class="font-bold text-lg">CIATox-SC (Centro de Informação e Assistência Toxicológica)</h3>
+                        <p class="text-sm mb-2">Orientação para profissionais de saúde (24h)</p>
+                        <p class="text-2xl font-bold text-blue-700">0800 643 5252</p>
+                        <p class="text-lg font-semibold">(48) 3721-9173</p>
                     </div>
-                 </div>
-            </div>
+                    <div class="bg-white text-gray-800 p-4 rounded-lg text-center shadow-md">
+                        <h3 class="font-bold text-lg">Vigilância Epidemiológica de Florianópolis</h3>
+                        <p class="text-sm mb-2">Para notificação de casos suspeitos</p>
+                        <p class="text-lg font-semibold">(48) 3212-3910</p>
+                        <p class="text-lg font-semibold">(48) 93300-9983 (Plantão)</p>
+                    </div>
+                </div>
+            </section>
 
-        </section>
-        
-        <!-- Seção de Contatos -->
-        <section id="contatos" class="section-card bg-blue-900 text-white">
-            <h2 class="text-2xl font-bold mb-4">Contatos de Emergência e Notificação</h2>
-            <div class="grid sm:grid-cols-2 gap-6">
-                <div class="bg-white text-gray-800 p-4 rounded-lg text-center shadow-md">
-                    <h3 class="font-bold text-lg">CIATox-SC (Centro de Informação e Assistência Toxicológica)</h3>
-                    <p class="text-sm mb-2">Orientação para profissionais de saúde (24h)</p>
-                    <p class="text-2xl font-bold text-blue-700">0800 643 5252</p>
-                    <p class="text-lg font-semibold">(48) 3721-9173</p>
-                </div>
-                <div class="bg-white text-gray-800 p-4 rounded-lg text-center shadow-md">
-                    <h3 class="font-bold text-lg">Vigilância Epidemiológica de Florianópolis</h3>
-                    <p class="text-sm mb-2">Para notificação de casos suspeitos</p>
-                    <p class="text-lg font-semibold">(48) 3212-3910</p>
-                    <p class="text-lg font-semibold">(48) 93300-9983 (Plantão)</p>
-                </div>
-            </div>
-        </section>
+        </main>
 
-    </main>
-
-    <!-- Seção de Documentos Completos -->
-    <section id="documentos" class="section-card container mx-auto p-4 sm:p-6 lg:p-8 text-center">
-        <h2 class="text-2xl font-bold text-gray-800 mb-3">Acesse a Documentação Completa</h2>
-        <p class="max-w-2xl mx-auto mb-4 text-gray-600">Para um aprofundamento técnico, consulte as notas e orientações oficiais utilizadas como fonte para esta página através do link abaixo.</p>
-        <a href="https://drive.google.com/drive/folders/1-N1YQrwuJmlLKdOXJHy2VnqZIVM780Vp?usp=drive_link" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors shadow-md">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-2" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
-            </svg>
-            Ver Documentos Oficiais
-        </a>
-    </section>
-
-    <!-- Seção de Vídeo -->
-    <section id="video" class="section-card container mx-auto p-4 sm:p-6 lg:p-8">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Entenda Melhor o Risco</h2>
-        <div class="aspect-w-16 aspect-h-9 max-w-3xl mx-auto">
-            <iframe 
-                src="https://www.youtube.com/embed/mLSsnjUsqW4" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen
-                class="w-full h-full rounded-lg shadow-lg">
-            </iframe>
-        </div>
-    </section>
-
-
-    <!-- Seção de Quiz Interativo -->
-    <section id="quiz" class="section-card container mx-auto p-4 sm:p-6 lg:p-8">
-        <h2 class="text-2xl font-bold text-green-700 mb-6 text-center">Teste seu Conhecimento!</h2>
-        <div id="quiz-container" class="max-w-2xl mx-auto">
-            
-            <!-- Pergunta 1 -->
-            <div class="quiz-question">
-                <p class="font-semibold mb-3">1. Qual é o principal e mais grave risco da intoxicação por metanol?</p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    <button class="quiz-option p-3 rounded-lg">A) Apenas uma dor de cabeça forte.</button>
-                    <button class="quiz-option p-3 rounded-lg" data-correct="true">B) Cegueira irreversível e risco de morte.</button>
-                    <button class="quiz-option p-3 rounded-lg">C) Uma ressaca mais intensa que o normal.</button>
-                    <button class="quiz-option p-3 rounded-lg">D) Leve irritação no estômago.</button>
-                </div>
-                <div class="quiz-feedback hidden mt-3 p-3 rounded-lg text-sm" data-correct-feedback="Correto! A intoxicação por metanol é extremamente grave, levando à produção de ácido fórmico no corpo, que pode causar cegueira permanente e até a morte." data-incorrect-feedback="Incorreto. O principal risco é a cegueira irreversível e a morte. O metanol é muito mais perigoso que o álcool comum."></div>
-                <div class="text-center">
-                    <button class="next-btn hidden mt-4 bg-green-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 transition-colors">Próxima Pergunta &rarr;</button>
-                </div>
-            </div>
-
-            <!-- Pergunta 2 -->
-            <div class="quiz-question hidden">
-                <p class="font-semibold mb-3">2. Qual sintoma, que geralmente aparece entre 12 e 24 horas após a ingestão, é considerado um sinal de alerta máximo?</p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    <button class="quiz-option p-3 rounded-lg">A) Náuseas e vômitos.</button>
-                    <button class="quiz-option p-3 rounded-lg">B) Sensação de embriaguez.</button>
-                    <button class="quiz-option p-3 rounded-lg">C) Dores abdominais.</button>
-                    <button class="quiz-option p-3 rounded-lg" data-correct="true">D) Qualquer alteração visual.</button>
-                </div>
-                <div class="quiz-feedback hidden mt-3 p-3 rounded-lg text-sm" data-correct-feedback="Correto! Qualquer sintoma visual, como visão turva, borrada ou pontos cegos, após a ingestão de uma bebida suspeita é um forte indicador de intoxicação por metanol e requer atenção médica imediata." data-incorrect-feedback="Incorreto. Embora os outros sintomas ocorram, as alterações visuais são o sinal de alerta máximo para a gravidade da intoxicação."></div>
-                 <div class="text-center">
-                    <button class="next-btn hidden mt-4 bg-green-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 transition-colors">Próxima Pergunta &rarr;</button>
-                </div>
-            </div>
-
-            <!-- Pergunta 3 -->
-            <div class="quiz-question hidden">
-                <p class="font-semibold mb-3">3. Se uma pessoa suspeita ter consumido uma bebida com metanol, qual é a ação mais importante a ser tomada?</p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    <button class="quiz-option p-3 rounded-lg">A) Esperar os sintomas passarem.</button>
-                    <button class="quiz-option p-3 rounded-lg">B) Beber bastante leite.</button>
-                    <button class="quiz-option p-3 rounded-lg" data-correct="true">C) Procurar atendimento médico de urgência imediatamente.</button>
-                    <button class="quiz-option p-3 rounded-lg">D) Tentar induzir o vômito.</button>
-                </div>
-                <div class="quiz-feedback hidden mt-3 p-3 rounded-lg text-sm" data-correct-feedback="Correto! Não se deve esperar. O tratamento precoce é crucial para evitar sequelas graves. Procurar um serviço de emergência é a única ação segura." data-incorrect-feedback="Incorreto. A ação correta e segura é procurar ajuda médica de emergência o mais rápido possível. Outras medidas podem ser ineficazes ou até prejudiciais."></div>
-                 <div class="text-center">
-                    <button class="next-btn hidden mt-4 bg-green-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 transition-colors">Próxima Pergunta &rarr;</button>
-                </div>
-            </div>
-
-            <!-- Pergunta 4 -->
-            <div class="quiz-question hidden">
-                <p class="font-semibold mb-3">4. No atendimento a um paciente com suspeita de intoxicação por metanol, qual procedimento NÃO é recomendado?</p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    <button class="quiz-option p-3 rounded-lg" data-correct="true">A) Lavagem gástrica e uso de carvão ativado.</button>
-                    <button class="quiz-option p-3 rounded-lg">B) Monitorar sinais vitais e gasometria.</button>
-                    <button class="quiz-option p-3 rounded-lg">C) Administrar Bicarbonato de Sódio para acidose.</button>
-                    <button class="quiz-option p-3 rounded-lg">D) Hidratação venosa.</button>
-                </div>
-                <div class="quiz-feedback hidden mt-3 p-3 rounded-lg text-sm" data-correct-feedback="Correto! A lavagem gástrica e o carvão ativado não são eficazes para a absorção do metanol e, portanto, não são recomendados no manejo clínico." data-incorrect-feedback="Incorreto. As outras opções são medidas importantes no suporte ao paciente. A lavagem gástrica e o carvão ativado são ineficazes neste tipo de intoxicação."></div>
-                 <div class="text-center">
-                    <button class="next-btn hidden mt-4 bg-green-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 transition-colors">Próxima Pergunta &rarr;</button>
-                </div>
-            </div>
-            
-            <!-- Pergunta 5 -->
-            <div class="quiz-question hidden">
-                <p class="font-semibold mb-3">5. O que é utilizado como antídoto para bloquear o metabolismo tóxico do metanol no corpo?</p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    <button class="quiz-option p-3 rounded-lg">A) Ácido folínico.</button>
-                    <button class="quiz-option p-3 rounded-lg" data-correct="true">B) Etanol (álcool comum).</button>
-                    <button class="quiz-option p-3 rounded-lg">C) Benzodiazepínicos.</button>
-                    <button class="quiz-option p-3 rounded-lg">D) Bicarbonato de Sódio.</button>
-                </div>
-                <div class="quiz-feedback hidden mt-3 p-3 rounded-lg text-sm" data-correct-feedback="Correto! O Etanol compete com o metanol pela mesma enzima (álcool desidrogenase), impedindo que o metanol seja convertido em seus produtos tóxicos." data-incorrect-feedback="Incorreto. Embora outras substâncias sejam usadas no tratamento de suporte (como o Bicarbonato para acidose), o Etanol age como antídoto direto."></div>
-                <div class="text-center">
-                    <button id="restart-quiz-btn" class="hidden mt-4 bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">Recomeçar Quiz</button>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Seção de Inscrição e Teste -->
-    <section id="inscricao-teste" class="section-card container mx-auto p-4 sm:p-6 lg:p-8 text-center bg-gray-100">
-        <h2 class="text-2xl font-bold text-gray-800 mb-3">Finalize o Curso Livre</h2>
-        <p class="max-w-2xl mx-auto mb-6 text-gray-600">Após estudar o conteúdo, realize o teste de aproveitamento para obter sua certificação.</p>
-        <div class="flex justify-center items-center flex-wrap gap-4">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeN7eoFlPweszSwwjE8IX6Um70e1dzdjdEE0tDDfPCovqB9sA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-base transition-colors shadow-md">
-                <i class="fas fa-file-alt mr-2"></i>Teste de Aproveitamento
+        <!-- Seção de Documentos Completos -->
+        <section id="documentos" class="section-card container mx-auto p-4 sm:p-6 lg:p-8 text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-3">Acesse a Documentação Completa</h2>
+            <p class="max-w-2xl mx-auto mb-4 text-gray-600">Para um aprofundamento técnico, consulte as notas e orientações oficiais utilizadas como fonte para esta página através do link abaixo.</p>
+            <a href="https://drive.google.com/drive/folders/1-N1YQrwuJmlLKdOXJHy2VnqZIVM780Vp?usp=drive_link" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+                </svg>
+                Ver Documentos Oficiais
             </a>
-        </div>
-    </section>
+        </section>
+
+        <!-- Seção de Vídeo -->
+        <section id="video" class="section-card container mx-auto p-4 sm:p-6 lg:p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Entenda Melhor o Risco</h2>
+            <div class="aspect-w-16 aspect-h-9 max-w-3xl mx-auto">
+                <iframe 
+                    src="https://www.youtube.com/embed/mLSsnjUsqW4" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    class="w-full h-full rounded-lg shadow-lg">
+                </iframe>
+            </div>
+        </section>
+
+
+        <!-- Seção de Quiz Interativo -->
+        <section id="quiz" class="section-card container mx-auto p-4 sm:p-6 lg:p-8">
+            <h2 class="text-2xl font-bold text-green-700 mb-6 text-center">Teste seu Conhecimento!</h2>
+            <div id="quiz-container" class="max-w-2xl mx-auto">
+                
+                <!-- Pergunta 1 -->
+                <div class="quiz-question">
+                    <p class="font-semibold mb-3">1. Qual é o principal e mais grave risco da intoxicação por metanol?</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <button class="quiz-option p-3 rounded-lg">A) Apenas uma dor de cabeça forte.</button>
+                        <button class="quiz-option p-3 rounded-lg" data-correct="true">B) Cegueira irreversível e risco de morte.</button>
+                        <button class="quiz-option p-3 rounded-lg">C) Uma ressaca mais intensa que o normal.</button>
+                        <button class="quiz-option p-3 rounded-lg">D) Leve irritação no estômago.</button>
+                    </div>
+                    <div class="quiz-feedback hidden mt-3 p-3 rounded-lg text-sm" data-correct-feedback="Correto! A intoxicação por metanol é extremamente grave, levando à produção de ácido fórmico no corpo, que pode causar cegueira permanente e até a morte." data-incorrect-feedback="Incorreto. O principal risco é a cegueira irreversível e a morte. O metanol é muito mais perigoso que o álcool comum."></div>
+                    <div class="text-center">
+                        <button class="next-btn hidden mt-4 bg-green-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 transition-colors">Próxima Pergunta &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Pergunta 2 -->
+                <div class="quiz-question hidden">
+                    <p class="font-semibold mb-3">2. Qual sintoma, que geralmente aparece entre 12 e 24 horas após a ingestão, é considerado um sinal de alerta máximo?</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <button class="quiz-option p-3 rounded-lg">A) Náuseas e vômitos.</button>
+                        <button class="quiz-option p-3 rounded-lg">B) Sensação de embriaguez.</button>
+                        <button class="quiz-option p-3 rounded-lg">C) Dores abdominais.</button>
+                        <button class="quiz-option p-3 rounded-lg" data-correct="true">D) Qualquer alteração visual.</button>
+                    </div>
+                    <div class="quiz-feedback hidden mt-3 p-3 rounded-lg text-sm" data-correct-feedback="Correto! Qualquer sintoma visual, como visão turva, borrada ou pontos cegos, após a ingestão de uma bebida suspeita é um forte indicador de intoxicação por metanol e requer atenção médica imediata." data-incorrect-feedback="Incorreto. Embora os outros sintomas ocorram, as alterações visuais são o sinal de alerta máximo para a gravidade da intoxicação."></div>
+                     <div class="text-center">
+                        <button class="next-btn hidden mt-4 bg-green-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 transition-colors">Próxima Pergunta &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Pergunta 3 -->
+                <div class="quiz-question hidden">
+                    <p class="font-semibold mb-3">3. Se uma pessoa suspeita ter consumido uma bebida com metanol, qual é a ação mais importante a ser tomada?</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <button class="quiz-option p-3 rounded-lg">A) Esperar os sintomas passarem.</button>
+                        <button class="quiz-option p-3 rounded-lg">B) Beber bastante leite.</button>
+                        <button class="quiz-option p-3 rounded-lg" data-correct="true">C) Procurar atendimento médico de urgência imediatamente.</button>
+                        <button class="quiz-option p-3 rounded-lg">D) Tentar induzir o vômito.</button>
+                    </div>
+                    <div class="quiz-feedback hidden mt-3 p-3 rounded-lg text-sm" data-correct-feedback="Correto! Não se deve esperar. O tratamento precoce é crucial para evitar sequelas graves. Procurar um serviço de emergência é a única ação segura." data-incorrect-feedback="Incorreto. A ação correta e segura é procurar ajuda médica de emergência o mais rápido possível. Outras medidas podem ser ineficazes ou até prejudiciais."></div>
+                     <div class="text-center">
+                        <button class="next-btn hidden mt-4 bg-green-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 transition-colors">Próxima Pergunta &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Pergunta 4 -->
+                <div class="quiz-question hidden">
+                    <p class="font-semibold mb-3">4. No atendimento a um paciente com suspeita de intoxicação por metanol, qual procedimento NÃO é recomendado?</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <button class="quiz-option p-3 rounded-lg" data-correct="true">A) Lavagem gástrica e uso de carvão ativado.</button>
+                        <button class="quiz-option p-3 rounded-lg">B) Monitorar sinais vitais e gasometria.</button>
+                        <button class="quiz-option p-3 rounded-lg">C) Administrar Bicarbonato de Sódio para acidose.</button>
+                        <button class="quiz-option p-3 rounded-lg">D) Hidratação venosa.</button>
+                    </div>
+                    <div class="quiz-feedback hidden mt-3 p-3 rounded-lg text-sm" data-correct-feedback="Correto! A lavagem gástrica e o carvão ativado não são eficazes para a absorção do metanol e, portanto, não são recomendados no manejo clínico." data-incorrect-feedback="Incorreto. As outras opções são medidas importantes no suporte ao paciente. A lavagem gástrica e o carvão ativado são ineficazes neste tipo de intoxicação."></div>
+                     <div class="text-center">
+                        <button class="next-btn hidden mt-4 bg-green-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 transition-colors">Próxima Pergunta &rarr;</button>
+                    </div>
+                </div>
+                
+                <!-- Pergunta 5 -->
+                <div class="quiz-question hidden">
+                    <p class="font-semibold mb-3">5. O que é utilizado como antídoto para bloquear o metabolismo tóxico do metanol no corpo?</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <button class="quiz-option p-3 rounded-lg">A) Ácido folínico.</button>
+                        <button class="quiz-option p-3 rounded-lg" data-correct="true">B) Etanol (álcool comum).</button>
+                        <button class="quiz-option p-3 rounded-lg">C) Benzodiazepínicos.</button>
+                        <button class="quiz-option p-3 rounded-lg">D) Bicarbonato de Sódio.</button>
+                    </div>
+                    <div class="quiz-feedback hidden mt-3 p-3 rounded-lg text-sm" data-correct-feedback="Correto! O Etanol compete com o metanol pela mesma enzima (álcool desidrogenase), impedindo que o metanol seja convertido em seus produtos tóxicos." data-incorrect-feedback="Incorreto. Embora outras substâncias sejam usadas no tratamento de suporte (como o Bicarbonato para acidose), o Etanol age como antídoto direto."></div>
+                    <div class="text-center">
+                        <button id="restart-quiz-btn" class="hidden mt-4 bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">Recomeçar Quiz</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção de Inscrição e Teste -->
+        <section id="inscricao-teste" class="section-card container mx-auto p-4 sm:p-6 lg:p-8 text-center bg-gray-100">
+            <h2 class="text-2xl font-bold text-gray-800 mb-3">Finalize o Curso Livre</h2>
+            <p class="max-w-2xl mx-auto mb-6 text-gray-600">Após estudar o conteúdo, realize o teste de aproveitamento para obter sua certificação.</p>
+            <div class="flex justify-center items-center flex-wrap gap-4">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeN7eoFlPweszSwwjE8IX6Um70e1dzdjdEE0tDDfPCovqB9sA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-base transition-colors shadow-md">
+                    <i class="fas fa-file-alt mr-2"></i>Teste de Aproveitamento
+                </a>
+            </div>
+        </section>
+    </div>
 
 
     <footer class="text-center py-4 bg-gray-200 text-gray-600 text-sm">
@@ -625,11 +636,20 @@
                 courseModal.classList.add('hidden');
             }
         });
+        
+        // Lógica do botão Iniciar
+        const startSection = document.getElementById('start-section');
+        const startBtn = document.getElementById('start-btn');
+        const mainContentWrapper = document.getElementById('main-content-wrapper');
+
+        startBtn.addEventListener('click', () => {
+            startSection.classList.add('hidden');
+            mainContentWrapper.classList.remove('hidden');
+            // Rola suavemente para a primeira seção do conteúdo
+            document.getElementById('alerta').scrollIntoView({ behavior: 'smooth' });
+        });
 
     </script>
 </body>
 </html>
-
-
-
 
