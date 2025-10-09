@@ -113,18 +113,29 @@
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Header -->
-    <header class="bg-red-600 text-white shadow-lg">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <header class="bg-red-600 text-white shadow-lg relative overflow-hidden">
+        <!-- Imagem de fundo com opacidade -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://i.imgur.com/g2Eg35e.jpeg" alt="Imagem de fundo de moléculas" class="w-full h-full object-cover opacity-20">
+        </div>
+        
+        <!-- Conteúdo do Header -->
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 relative z-10">
             <div class="flex flex-col items-center">
-                <div class="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <div class="flex items-center text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3 hidden sm:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                     </svg>
                     <h1 class="text-2xl font-bold">Alerta de Saúde Pública: Intoxicação por Metanol</h1>
                 </div>
-                <button id="open-modal-btn" class="mt-4 bg-white text-red-600 font-bold py-2 px-6 rounded-full shadow-md hover:bg-slate-100 transition-transform transform hover:scale-105">
-                    <i class="fas fa-graduation-cap mr-2"></i>Curso Livre
-                </button>
+                <div class="mt-4 flex flex-wrap justify-center items-center gap-3">
+                    <button class="open-modal-trigger font-bold py-2 px-6 rounded-full shadow-md transition-all transform hover:scale-105 inline-flex items-center justify-center bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/50 text-white">
+                        <i class="fas fa-graduation-cap mr-2"></i>Curso Livre - Informações
+                    </button>
+                    <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" rel="noopener noreferrer" class="font-bold py-2 px-6 rounded-full shadow-md transition-all transform hover:scale-105 inline-flex items-center justify-center bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/50 text-white">
+                        <i class="fas fa-user-plus mr-2"></i>Curso Livre - Inscrição
+                    </a>
+                </div>
                  <nav class="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm">
                     <a href="#alerta" class="hover:text-red-200">Alerta</a>
                     <a href="#sintomas" class="hover:text-red-200">Sintomas</a>
@@ -132,6 +143,7 @@
                     <a href="#profissionais" class="hover:text-red-200">Profissionais</a>
                     <a href="#contatos" class="hover:text-red-200">Contatos</a>
                     <a href="#documentos" class="hover:text-red-200">Documentos</a>
+                    <a href="#" class="open-modal-trigger hover:text-red-200">Curso Livre</a>
                 </nav>
             </div>
         </div>
@@ -461,12 +473,9 @@
 
     <!-- Seção de Inscrição e Teste -->
     <section id="inscricao-teste" class="section-card container mx-auto p-4 sm:p-6 lg:p-8 text-center bg-gray-100">
-        <h2 class="text-2xl font-bold text-gray-800 mb-3">Participe do Curso Livre</h2>
-        <p class="max-w-2xl mx-auto mb-6 text-gray-600">Aprofunde seu conhecimento e obtenha a certificação. Siga os passos abaixo para se inscrever e realizar o teste de aproveitamento.</p>
+        <h2 class="text-2xl font-bold text-gray-800 mb-3">Finalize o Curso Livre</h2>
+        <p class="max-w-2xl mx-auto mb-6 text-gray-600">Após estudar o conteúdo, realize o teste de aproveitamento para obter sua certificação.</p>
         <div class="flex justify-center items-center flex-wrap gap-4">
-            <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-base transition-colors shadow-md">
-                <i class="fas fa-user-plus mr-2"></i>Inscreva-se no curso
-            </a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeN7eoFlPweszSwwjE8IX6Um70e1dzdjdEE0tDDfPCovqB9sA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-base transition-colors shadow-md">
                 <i class="fas fa-file-alt mr-2"></i>Teste de Aproveitamento
             </a>
@@ -491,8 +500,8 @@
             <div class="text-gray-700 space-y-3">
                 <ul class="list-disc list-inside space-y-2">
                     <li>Este Curso Livre é voltado para profissionais de saúde de nível superior e será certificado com a carga horária de 2 horas/aula.</li>
-                    <li>Você deve clicar no botão disponível no fim desta página (ou <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:underline font-semibold">aqui</a>) e preencher todos os campos para se inscrever no curso no mês corrente.</li>
-                    <li>Após a inscrição realizada, você tem até o último dia do mês para responder o teste de aproveitamento disponibilizado no botão no fim da página (não confundir com o Quiz!).</li>
+                    <li>Você deve clicar no botão ao lado (ou <a href="https://espfloripa.github.io/cursoslivres/" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:underline font-semibold">aqui</a>) e preencher todos os campos para se inscrever no curso no mês corrente.</li>
+                    <li>Após a inscrição realizada, você deve explorar o conteúdo e tem até o último dia do mês para responder o teste de aproveitamento disponibilizado no botão no fim da página (não confundir com o Quiz!).</li>
                     <li>Para responder o teste de aproveitamento você deve estar logado em uma conta Google, coloque o nome completo, CPF e e-mail conforme você colocou no link de inscrição.</li>
                     <li>A nota de corte para aprovação é de 80%.</li>
                     <li>O teste de aproveitamento só permite uma resposta por participante, caso você não seja aprovado poderá repetir o curso no mês seguinte.</li>
@@ -595,12 +604,15 @@
         });
 
         // Lógica do Modal
-        const openModalBtn = document.getElementById('open-modal-btn');
+        const openModalTriggers = document.querySelectorAll('.open-modal-trigger');
         const closeModalBtn = document.getElementById('close-modal-btn');
         const courseModal = document.getElementById('course-modal');
 
-        openModalBtn.addEventListener('click', () => {
-            courseModal.classList.remove('hidden');
+        openModalTriggers.forEach(trigger => {
+            trigger.addEventListener('click', (event) => {
+                event.preventDefault(); // Evita que o link '#' mude a URL
+                courseModal.classList.remove('hidden');
+            });
         });
 
         closeModalBtn.addEventListener('click', () => {
@@ -617,7 +629,6 @@
     </script>
 </body>
 </html>
-
 
 
 
